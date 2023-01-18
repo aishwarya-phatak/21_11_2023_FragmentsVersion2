@@ -24,8 +24,12 @@ class MainActivity : AppCompatActivity() {
         counterFragment = supportFragmentManager.findFragmentById(R.id.counterFragment) as CounterFragment
     }
     private fun initListeners(){
+
         binding.btnReset.setOnClickListener {
 
         }
+
+
+
     }
 }

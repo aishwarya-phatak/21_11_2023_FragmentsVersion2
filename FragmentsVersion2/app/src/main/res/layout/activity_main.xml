@@ -29,16 +29,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reset" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <fragment
-                android:id="@+id/counterFragment"
-                android:name="com.example.fragmentsversion2.CounterFragment"
+
+            <Button
+                android:id="@+id/btnAddFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp" />
+                android:layout_weight="1"
+                android:text="Add Fragment" />
+
+            <Button
+                android:id="@+id/btnRemoveFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Remove Fragment" />
         </LinearLayout>
+
+        <fragment
+            android:id="@+id/counterFragment"
+            android:name="com.example.fragmentsversion2.CounterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
 
